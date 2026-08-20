@@ -14,6 +14,14 @@ keywords:
   - semantic-entropy
   - uncertainty-estimation
 references:
+  - type: conference-paper
+    title: "Multi-Agent Intelligent Tutoring with Hallucination Detection"
+    authors:
+      - family-names: Inoubli
+        given-names: Meriam
+    collection-title: "Intelligent Tutoring Systems (ITS)"
+    year: 2026
+    url: "https://www.lamsade.dauphine.fr/~cazenave/papers/IntelligentTutoringSystems2026.pdf"
   - type: article
     title: "Detecting Hallucinations in Large Language Models Using Semantic Entropy"
     authors:
