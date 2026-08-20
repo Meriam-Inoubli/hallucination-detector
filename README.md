@@ -146,7 +146,11 @@ This project reimplements, from scratch and on Gemini, methods introduced in:
 - Zhang, T. et al. (2023). *Enhancing Uncertainty-Based Hallucination Detection with Stronger Focus.* EMNLP.
 
 It grew out of the author's research on **multi-agent intelligent tutoring with
-hallucination detection** (ITS 2026). If you use it, see [`CITATION.cff`](CITATION.cff).
+hallucination detection**, published at **ITS 2026**:
+
+> 📄 [Multi-Agent Intelligent Tutoring with Hallucination Detection (ITS 2026)](https://www.lamsade.dauphine.fr/~cazenave/papers/IntelligentTutoringSystems2026.pdf)
+
+If you use this software, see [`CITATION.cff`](CITATION.cff).
 
 ## 📄 License
 
