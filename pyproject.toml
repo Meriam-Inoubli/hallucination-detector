@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "halludetect"
+version = "0.1.0"
+description = "Detect LLM hallucinations on any text — semantic entropy, SUScore and a hybrid, on Google Gemini."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Meriam Inoubli", email = "meriam.inoubli@dauphine.tn" }]
+keywords = [
+    "hallucination-detection", "llm", "gemini", "semantic-entropy",
+    "uncertainty", "nlp", "ai-safety", "evaluation",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scikit-learn>=1.3",
+    "scipy>=1.10",
+    "google-generativeai>=0.8.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+spacy = ["spacy>=3.7"]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.urls]
+Homepage = "https://github.com/Meriam-Inoubli/hallucination-detector"
+Issues = "https://github.com/Meriam-Inoubli/hallucination-detector/issues"
+
+[project.scripts]
+halludetect = "halludetect.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
